@@ -1,6 +1,17 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Evaluator {
+    private static final Pattern extractEquation = Pattern.compile("");
+
     public static void main(String[] args) {
         System.out.println("Hello, Monkey Butt!");
+    }
+
+    private Equation createEquation(String input) {
+        Matcher equationMatcher = extractEquation.matcher(input);
+        return new Equation(Integer.parseInt(equationMatcher.group(0)),
+                Integer.parseInt(equationMatcher.group(2)), equationMatcher.group(1).charAt(0));
     }
 
     public class Equation {
