@@ -12,6 +12,5 @@ public class Evaluator {
             this.operand_2 = operand_2;
             this.operator = operator;
         }
-
     }
 }
