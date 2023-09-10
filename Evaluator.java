@@ -23,5 +23,20 @@ public class Evaluator {
             this.operand_2 = operand_2;
             this.operator = operator;
         }
+
+        public int evaluate() {
+            switch (operator) {
+                case '+':
+                    return operand_1 + operand_2;
+                case '-':
+                    return operand_1 - operand_2;
+                case '*':
+                    return operand_1 * operand_2;
+                case '/':
+                    return operand_1 / operand_2;
+                default:
+                    return 0;
+            }
+        }
     }
 }
