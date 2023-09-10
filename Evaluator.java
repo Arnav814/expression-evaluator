@@ -2,7 +2,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Evaluator {
-    private static final Pattern extractEquation = Pattern.compile("");
+    private static final Pattern extractEquation = Pattern.compile("(-?\\d+) *([+\\-*/]) *(-?\\d+)");
 
     public static void main(String[] args) {
         System.out.println("Hello, Monkey Butt!");
